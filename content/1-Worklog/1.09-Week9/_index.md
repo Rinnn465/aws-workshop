@@ -17,10 +17,10 @@ pre: " <b> 1.9. </b> "
 ### Tasks to carry out this week:
 | Day | Tasks                                                                                                                                                                                   | Start date | Completion date | References                            |
 | --- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Meeting to approve overall chatbot project architecture and preliminary proposal <br> - Collect sample data and research various dashboard interfaces to leverage ideas for project's admin dashboard section | 04/11/2025   | 04/11/2025      |
-| 3   | - Create first version of project proposal (draft)                                            | 05/11/2025   | 05/11/2025      | |
-| 4   | - Team members review draft proposal and make revisions | 06/11/2025   | 06/11/2025      | |
-| 5   | - Finalize proposal and submit   | 07/11/2025   | 07/11/2025      | |
+| 3   | - Meeting to approve overall chatbot project architecture and preliminary proposal <br> - Collect sample data and research various dashboard interfaces to leverage ideas for project's admin dashboard section | 04/11/2025   | 04/11/2025      |
+| 4   | - Create first version of project proposal (draft)                                            | 05/11/2025   | 05/11/2025      | |
+| 5   | - Team members review draft proposal and make revisions | 06/11/2025   | 06/11/2025      | |
+| 6   | - Finalize proposal and submit   | 07/11/2025   | 07/11/2025      | |
 
 
 ### Week 9 Achievements:

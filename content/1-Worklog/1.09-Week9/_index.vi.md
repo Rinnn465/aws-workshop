@@ -17,10 +17,10 @@ pre: " <b> 1.9. </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Họp phê duyệt về kiến trúc tổng thể của dự án chatbot và sơ bộ về proposal của dự án <br> - Thu thập các dữ liệu mẫu, tham khảo giao diện của các trang dashboard khác nhau để tận dụng lên ý tưởng cho phần dashboard admin của dự án | 04/11/2025   | 04/11/2025      |
-| 3   | - Làm phiên bản đầu tiên của proposal cho dự án (draft)                                            | 05/11/2025   | 05/11/2025      | |
-| 4   | - Các thành viên xem qua draft proposal và chỉnh sửa | 06/11/2025   | 06/11/2025      | |
-| 5   | - Hoàn thiện proposal và nộp   | 07/11/2025   | 07/11/2025      | |
+| 3   | - Họp phê duyệt về kiến trúc tổng thể của dự án chatbot và sơ bộ về proposal của dự án <br> - Thu thập các dữ liệu mẫu, tham khảo giao diện của các trang dashboard khác nhau để tận dụng lên ý tưởng cho phần dashboard admin của dự án | 04/11/2025   | 04/11/2025      |
+| 4   | - Làm phiên bản đầu tiên của proposal cho dự án (draft)                                            | 05/11/2025   | 05/11/2025      | |
+| 5   | - Các thành viên xem qua draft proposal và chỉnh sửa | 06/11/2025   | 06/11/2025      | |
+| 6   | - Hoàn thiện proposal và nộp   | 07/11/2025   | 07/11/2025      | |
 
 
 ### Kết quả đạt được tuần 9:
