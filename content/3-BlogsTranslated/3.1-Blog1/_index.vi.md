@@ -50,6 +50,8 @@ Lưu trữ dữ liệu ở trạng thái không thể sửa đổi sau khi đư�
 
 Veeam Backup cho AWS cho phép bảo vệ dữ liệu được lưu trữ trong các kho lưu trữ sao lưu khỏi việc bị xóa bằng cách làm cho dữ liệu trở nên bất biến cho đến khi đạt được thời gian lưu giữ mong muốn. Veeam Backup sử dụng [Amazon Simple Storage Service (S3) Object Lock](https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lock.html) để ngăn chặn việc xóa hoặc sửa đổi dữ liệu sao lưu dựa trên các chính sách lưu giữ. Trong chế độ tuân thủ, dữ liệu không thể bị can thiệp hoặc xóa bởi bất kỳ người dùng nào, kể cả người dùng gốc của tài khoản AWS, giúp bảo vệ chống lại ransomware và các hành động độc hại. Để biết chi tiết cấu hình, hãy tham khảo [hướng dẫn cấu hình tính bất biến trên tài liệu của Veeam](https://helpcenter.veeam.com/docs/vbaws/guide/immutability.html?ver=80).
 
+![](/images/3-BlogsTranslated/Blog1/image2.png)
+
 ## **2\. Giảm thiểu Phạm vi Ảnh hưởng / Cô lập (Reducing Blast Radius / Isolation)**
 
 Việc **cô lập** dữ liệu, cơ sở hạ tầng và ứng dụng một cách vật lý và logic sẽ giảm thiểu tác động của các sự cố. Bằng cách **chia nhỏ** dữ liệu và khối lượng công việc, các tổ chức có thể phân đoạn quyền truy cập tốt hơn và **thu hẹp bề mặt tấn công** , khiến kẻ tấn công khó di chuyển ngang hơn. Các môi trường cô lập cho phép các tổ chức xác định nhanh chóng nguồn gốc của vấn đề và áp dụng các giải pháp có mục tiêu mà không ảnh hưởng đến các phần khác của hệ thống.
@@ -60,7 +62,7 @@ Việc **cô lập** dữ liệu, cơ sở hạ tầng và ứng dụng một c�
 
 Việc này cũng có thể được triển khai ở một [**AWS Region**](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/) **riêng biệt** để tăng cường tính **dự phòng**. Điều này đảm bảo tính khả dụng nếu tài khoản AWS của bạn bị xâm phạm, đồng thời giải quyết mọi vấn đề về tính sẵn sàng ở cấp độ địa lý (geo-level availability).
 
-![Multi-Account Architecture](/images/3-BlogsTranslated/Blog1/image2.png)
+![Multi-Account Architecture](/images/3-BlogsTranslated/Blog1/image3.png)
 
 ## **3\. Mã hóa Mọi nơi (Encryption Everywhere)**
 
@@ -76,7 +78,7 @@ Hơn nữa, Veeam mở rộng bảo mật này bằng cách hỗ trợ mã hóa 
 
 Veeam tích hợp liền mạch với các [AWS Identity and Access Management (IAM)](https://aws.amazon.com/iam/), đảm bảo rằng chỉ các vai trò được ủy quyền mới có thể truy cập hoặc quản lý các bản sao lưu đã được mã hóa. Bằng cách thực thi mã hóa trên tất cả các điểm dữ liệu, Veeam đơn giản hóa việc quản lý các chính sách mã hóa đồng thời củng cố tính bảo mật tổng thể của dữ liệu sao lưu.
 
-![Encryption Architecture](/images/3-BlogsTranslated/Blog1/image3.png)
+![Encryption Architecture](/images/3-BlogsTranslated/Blog1/image4.png)
 
 ## **4\. Quản lý Danh tính và Truy cập (Identity and Access Management \- IAM)**
 
@@ -100,7 +102,7 @@ Các kết nối chuyên dụng hoặc VPN cung cấp **băng thông có thể d
 
 Ngoài ra, Veeam có thể kích hoạt chức năng triển khai mạng riêng tư, cho phép giao tiếp với **Amazon S3** thông qua [**các điểm cuối giao diện Amazon S3 riêng tư**](https://docs.aws.amazon.com/AmazonS3/latest/userguide/privatelink-interface-endpoints.html). Veeam cho phép bạn triển khai các **[worker trong môi trường riêng tư](https://helpcenter.veeam.com/docs/vbaws/guide/worker_instances_in_private.html?ver=80)** mà không cần gán **IPV4 công cộng**, đảm bảo luồng lưu lượng sao lưu được bảo mật.
 
-![Private Connectivity Architecture](/images/3-BlogsTranslated/Blog1/image4.png)
+![Private Connectivity Architecture](/images/3-BlogsTranslated/Blog1/image5.png)
 
 Nếu bạn đang tìm cách triển khai **Veeam Backup for AWS** trong môi trường riêng tư và cần hướng dẫn, Veeam cung cấp một **kịch bản tự động hóa** để giúp bạn bắt đầu.
 
