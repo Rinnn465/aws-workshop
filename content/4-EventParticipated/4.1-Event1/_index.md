@@ -96,7 +96,7 @@ Participating in the **"GenAI-powered App-DB Modernization"** workshop delivered
 
 #### Event Photography
 ![Event1-1](/images/4-EventParticipated/event1-1.jpg)
-![Event1-2](/images/4-EventParticipated/event1=2.jpg)
+![Event1-2](/images/4-EventParticipated/event1-2.jpg)
 ![Event1-3](/images/4-EventParticipated/event1-3.jpg)
 
 
