@@ -23,11 +23,11 @@ Bảo vệ thông tin nhạy cảm là điều tối quan trọng đối với m
 
 Những mối lo ngại này nhấn mạnh nhu cầu cấp thiết về việc bảo vệ dữ liệu mạnh mẽ và các chiến lược **an ninh mạng bền vững** hiệu quả để giảm thiểu rủi ro và đảm bảo tuân thủ.
 
-![Ransomware Statistics](/images/3-BlogTranslated/Blog1/image1.png)
+![Ransomware Statistics](/images/3-BlogsTranslated/Blog1/image1.png)
 
 ## **Tổng quan về các biện pháp tốt nhất để Bảo mật dữ liệu**
 
-Khi triển khai trên **đám mây AWS (AWS cloud)**, việc hiểu rõ [**Mô hình Trách nhiệm Chung của AWS (AWS Shared Responsibility Model**](https://aws.amazon.com/compliance/shared-responsibility-model/)**)** là rất quan trọng. Mô hình này phân định sự phân chia trách nhiệm bảo mật giữa AWS và khách hàng. Trong khi AWS quản lý **an ninh của cơ sở hạ tầng đám mây**, khách hàng chịu trách nhiệm bảo mật **dữ liệu của họ bên trong đám mây**. Điều này bao gồm việc triển khai các biện pháp quản lý danh tính và truy cập, mã hóa, và bảo mật mạng phù hợp.
+Khi triển khai trên **đám mây AWS (AWS cloud)**, việc hiểu rõ [**Mô hình Trách nhiệm Chung của AWS (AWS Shared Responsibility Model)**](https://aws.amazon.com/compliance/shared-responsibility-model/) là rất quan trọng. Mô hình này phân định sự phân chia trách nhiệm bảo mật giữa AWS và khách hàng. Trong khi AWS quản lý **an ninh của cơ sở hạ tầng đám mây**, khách hàng chịu trách nhiệm bảo mật **dữ liệu của họ bên trong đám mây**. Điều này bao gồm việc triển khai các biện pháp quản lý danh tính và truy cập, mã hóa, và bảo mật mạng phù hợp.
 
 Các biện pháp tốt nhất trong việc bảo mật dữ liệu của bạn bao gồm:
 
@@ -60,7 +60,7 @@ Việc **cô lập** dữ liệu, cơ sở hạ tầng và ứng dụng một c�
 
 Việc này cũng có thể được triển khai ở một [**AWS Region**](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/) **riêng biệt** để tăng cường tính **dự phòng**. Điều này đảm bảo tính khả dụng nếu tài khoản AWS của bạn bị xâm phạm, đồng thời giải quyết mọi vấn đề về tính sẵn sàng ở cấp độ địa lý (geo-level availability).
 
-![Multi-Account Architecture](/images/3-BlogTranslated/Blog1/image2.png)
+![Multi-Account Architecture](/images/3-BlogsTranslated/Blog1/image2.png)
 
 ## **3\. Mã hóa Mọi nơi (Encryption Everywhere)**
 
@@ -76,7 +76,7 @@ Hơn nữa, Veeam mở rộng bảo mật này bằng cách hỗ trợ mã hóa 
 
 Veeam tích hợp liền mạch với các [AWS Identity and Access Management (IAM)](https://aws.amazon.com/iam/), đảm bảo rằng chỉ các vai trò được ủy quyền mới có thể truy cập hoặc quản lý các bản sao lưu đã được mã hóa. Bằng cách thực thi mã hóa trên tất cả các điểm dữ liệu, Veeam đơn giản hóa việc quản lý các chính sách mã hóa đồng thời củng cố tính bảo mật tổng thể của dữ liệu sao lưu.
 
-![Encryption Architecture](/images/3-BlogTranslated/Blog1/image3.png)
+![Encryption Architecture](/images/3-BlogsTranslated/Blog1/image3.png)
 
 ## **4\. Quản lý Danh tính và Truy cập (Identity and Access Management \- IAM)**
 
@@ -100,7 +100,7 @@ Các kết nối chuyên dụng hoặc VPN cung cấp **băng thông có thể d
 
 Ngoài ra, Veeam có thể kích hoạt chức năng triển khai mạng riêng tư, cho phép giao tiếp với **Amazon S3** thông qua [**các điểm cuối giao diện Amazon S3 riêng tư**](https://docs.aws.amazon.com/AmazonS3/latest/userguide/privatelink-interface-endpoints.html). Veeam cho phép bạn triển khai các **[worker trong môi trường riêng tư](https://helpcenter.veeam.com/docs/vbaws/guide/worker_instances_in_private.html?ver=80)** mà không cần gán **IPV4 công cộng**, đảm bảo luồng lưu lượng sao lưu được bảo mật.
 
-![Private Connectivity Architecture](/images/3-BlogTranslated/Blog1/image4.png)
+![Private Connectivity Architecture](/images/3-BlogsTranslated/Blog1/image4.png)
 
 Nếu bạn đang tìm cách triển khai **Veeam Backup for AWS** trong môi trường riêng tư và cần hướng dẫn, Veeam cung cấp một **kịch bản tự động hóa** để giúp bạn bắt đầu.
 
