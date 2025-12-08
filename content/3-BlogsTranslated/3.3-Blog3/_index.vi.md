@@ -32,7 +32,7 @@ Bạn cần trả lời các câu hỏi như: "Tìm tất cả các giao dịch 
 
 Để làm được điều này, bạn cần phải nhận biết và xử lý hàng chục—hoặc đôi khi hàng trăm—bảng, đồng thời phải tạo ra các truy vấn **JOIN phức tạp**. Sơ đồ sau minh họa một sơ đồ bảng mẫu có thể cần thiết cho các cuộc điều tra về việc gian lận.
 
-![Sơ đồ cơ sở dữ liệu mẫu cho phát hiện gian lận](/images/3-BlogsTranslated/Blog3/image1.png)
+![Sơ đồ cơ sở dữ liệu mẫu cho phát hiện gian lận](/images/3-BlogsTranslated/Blog3/image1.jpg)
 
 Những điều khó khăn chính khi triển khai giải pháp Text-to-SQL trong môi trường phức tạp này bao gồm, nhưng không giới hạn ở:
 
@@ -215,17 +215,17 @@ Sau khi bạn triển khai hai stack (**AwsText2Sql-DbStack** và **AwsText2Sql-
    * Cung cấp một danh sách tất cả các người bán cùng với tổng số giao dịch họ đã xử lý và số lượng các giao dịch đó đã bị đánh dấu là gian lận.  
    * Liệt kê năm khách hàng hàng đầu dựa trên số lượng giao dịch có giá trị cao nhất mà họ đã thực hiện.
 
-![Giao diện test Amazon Bedrock Agent](/images/3-BlogsTranslated/Blog3/image3.png)
+![Giao diện test Amazon Bedrock Agent](/images/3-BlogsTranslated/Blog3/image3.jpg)
 
 4. Hãy chọn "Show trace" (Hiển thị dấu vết) và kiểm tra từng bước để hiểu những công cụ nào được sử dụng và lý do của agent (agent) khi tiếp cận câu hỏi của bạn, như được minh họa trong ảnh chụp màn hình sau.
 
-![Hiển thị trace của agent](/images/3-BlogsTranslated/Blog3/image4.png)
+![Hiển thị trace của agent](/images/3-BlogsTranslated/Blog3/image4.jpg)
 
 5. (Tùy chọn) Bạn có thể kiểm tra [trình thông dịch mã](https://docs.aws.amazon.com/bedrock/latest/userguide/agents-code-interpretation.html) của Amazon Bedrock Agents bằng cách bật tính năng này trong Cài đặt agent (Agent settings).
 
 Hãy làm theo hướng dẫn tại [Enable code interpretation in Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/agents-enable-code-interpretation.html) và hỏi agent: "Tạo biểu đồ cột thể hiện ba thành phố hàng đầu có số vụ gian lận nhiều nhất."
 
-![Kết quả code interpretation với biểu đồ](/images/3-BlogsTranslated/Blog3/image5.png)
+![Kết quả code interpretation với biểu đồ](/images/3-BlogsTranslated/Blog3/image5.jpg)
 
 ## **Các ví dụ thực tiễn**
 
