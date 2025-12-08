@@ -39,19 +39,19 @@ Chúng tôi khuyên bạn nên triển khai các hàng rào bảo vệ quyền h
 
 Bước đầu tiên trong việc triển khai RCPs là xác định các lĩnh vực mà RCPs có thể giúp cải thiện bảo mật của bạn hoặc tối ưu hóa việc triển khai kiểm soát cho các mục tiêu kiểm soát bảo mật cụ thể của tổ chức bạn.
 
-![Kịch bản đơn giản](/images/3-BlogsTranslated/Blog2/image2.png)
+![](/images/3-BlogsTranslated/Blog2/image2.png)
 
 *Hình 2: Kịch bản đơn giản mô tả một danh tính đáng tin cậy truy cập một vai trò IAM*
 
 Một cách để đạt được mục tiêu kiểm soát này là tuân theo nguyên tắc đặc quyền tối thiểu và đảm bảo rằng chính sách tin cậy của vai trò, tức là chính sách dựa trên tài nguyên được đính kèm vào vai trò IAM, chỉ cho phép các danh tính yêu cầu quyền truy cập đó.
 
-![Chính sách tin cậy](/images/3-BlogsTranslated/Blog2/image3.png)
+![](/images/3-BlogsTranslated/Blog2/image3.png)
 
 *Ví dụ về chính sách tin cậy cấp quyền cho Role A trong Account A được assume Role B trong Account B*
 
 Giả sử công ty của bạn đã bắt đầu mở rộng quy mô sử dụng đám mây đến mức đội ngũ bảo mật trung tâm của bạn hiện phải đạt được cùng một mục tiêu kiểm soát với hàng trăm vai trò IAM được phân bổ trên nhiều tài khoản AWS.
 
-![Hạn chế truy cập](/images/3-BlogsTranslated/Blog2/image4.png)
+![](/images/3-BlogsTranslated/Blog2/image4.png)
 
 *Hình 3: Hạn chế truy cập bằng cách quản lý từng chính sách tin cậy của vai trò IAM riêng lẻ*
 
@@ -61,19 +61,19 @@ Các đội ngũ bảo mật trung tâm có thể triển khai các hàng rào b
 
 Mặc dù việc thêm câu lệnh **RestrictAccessToMyOrg** vào các chính sách tin cậy có thể được tự động hóa, RCPs (Chính sách Kiểm soát Tài nguyên) có thể đơn giản hóa rất nhiều việc thực thi các kiểm soát thô bằng cách chỉ định các chính sách quyền hạn trong **Resource Control Policies** và áp dụng chúng trên các OU hoặc tài khoản khác nhau. Điều này làm giảm nhu cầu cập nhật các chính sách dựa trên tài nguyên trên nhiều tài nguyên riêng lẻ, do đó tăng tính hiệu quả về vận hành. Hãy xem xét ví dụ mẫu dưới đây, minh họa một RCP được áp dụng vào một OU trong tổ chức AWS Organizations của bạn. Hãy lưu ý rằng RCP chỉ cần liên kết với (attached to) OU này một lần. Sau đó, nó sẽ được thực thi tự động trên tất cả tài nguyên hiện tại và tương lai trong các tài khoản thuộc về OU đó.
 
-![Hình 3: RCP được gắn vào một OU](/images/3-BlogsTranslated/Blog2/image6.png)
+![](/images/3-BlogsTranslated/Blog2/image5.png)
 
 RCPs cung cấp tính linh hoạt trong việc tùy chỉnh các **hàng rào bảo vệ quyền hạn** theo các cấp độ khác nhau của tổ chức để đáp ứng các nhu cầu riêng biệt của các đơn vị. Hình 4 minh họa một cấu trúc tổ chức mẫu trong đó các RCP với tính cụ thể và khắt khe tăng dần được áp dụng khi bạn đi theo cấu trúc phân cấp từ gốc xuống. Ví dụ: bạn có thể cấm quyền truy cập bên ngoài vào các vai trò IAM của mình ở cấp gốc. Sau đó, trên một OU mà các nhóm sử dụng AWS CodeBuild để tích hợp liên tục, bạn có thể áp dụng các kiểm soát bổ sung để hạn chế khả năng chia sẻ các dự án CodeBuild với các thực thể bên ngoài tổ chức của bạn.
 
-![Hình 4: Một tổ chức mẫu với các RCP được áp dụng ở nhiều cấp độ](/images/3-BlogsTranslated/Blog2/image7.png)
+![](/images/3-BlogsTranslated/Blog2/image6.png)
 
 Ví dụ: nếu bạn cần loại trừ **Account A** (một tài khoản thử nghiệm) khỏi các kiểm soát của mình nhưng vẫn muốn áp dụng chúng trong toàn bộ **Dev OU**, bạn có thể đơn giản hóa chiến lược triển khai của mình bằng cách đính kèm một RCP vào **Dev OU** với một câu lệnh duy nhất giúp loại trừ **Account A** khỏi bất kỳ control nào.
 
-![Hình sau minh họa ngoại lệ cho Account A](/images/3-BlogsTranslated/Blog2/image8.png)
+![](/images/3-BlogsTranslated/Blog2/image7.png)
 
 Một cách tiếp cận khác là sử dụng **resource tags** để cấp ngoại lệ cho các đối tác đáng tin cậy (trusted partner). Ví dụ: giả sử bạn đang sử dụng một công cụ Cloud Security Posture Management **(CSPM)** bên ngoài yêu cầu truy cập vào các vai trò IAM của bạn. Ngoài việc xác minh và thêm tài khoản CSPM vào RCPs, bạn có thể sử dụng **thẻ tài nguyên (resource tags)** như một cơ chế để cấp các ngoại lệ như được thể hiện trong **Hình 5**. Sau đó, bạn có thể cấu hình một **quy trình cấp phép** để giúp đảm bảo rằng một sự kiện được ghi nhận khi các nhóm gắn thẻ này.
 
-![Hình 5: Minh họa việc cấp ngoại lệ cho các đối tác đáng tin cậy](/images/3-BlogsTranslated/Blog2/image9.png)
+![](/images/3-BlogsTranslated/Blog2/image8.png)
 
 RCP mẫu sau sử dụng khóa ngữ cảnh **aws:PrincipalAccount** để cấp ngoại lệ cho một tập hợp tài khoản đáng tin cậy cụ thể. Ngoài ra, nó sử dụng **aws:ResourceTag** trên vai trò IAM được đảm nhận để cấp các ngoại lệ cho các đối tác khác. Điều này có nghĩa là các chính sách này có thể bao gồm hai loại ngoại lệ khác nhau thông qua:
 
@@ -81,17 +81,17 @@ RCP mẫu sau sử dụng khóa ngữ cảnh **aws:PrincipalAccount** để cấ
 
 * ### **RestrictAccessForTaggedRoles:** Câu lệnh này hạn chế truy cập hơn nữa bằng cách giúp đảm bảo rằng các vai trò có thẻ **`partner-access-exception`** chỉ có thể được đảm nhận bởi các đối tượng thuộc về tài khoản đối tác đáng tin cậy của bạn.
 
-![RCP mẫu sử dụng thẻ ngoại lệ](/images/3-BlogsTranslated/Blog2/image10.png)
+![](/images/3-BlogsTranslated/Blog2/image9.png)
 
 Nếu bạn có một tập hợp tài nguyên đã biết rõ và được giới hạn chặt chẽ cần được loại trừ, bạn cũng có thể sử dụng thành phần chính sách IAM là [**`NotResource`**](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_notresource.html) để liệt kê các Tên Tài nguyên Amazon **(ARNs)** của các tài nguyên cần loại trừ khỏi kiểm soát.
 
 Khi triển khai các quy trình ngoại lệ dựa trên thẻ, việc thiết lập kiểm soát chặt chẽ đối với việc quản lý thẻ là then chốt. Việc sửa đổi thẻ trái phép trên tài nguyên, đối tượng hoặc phiên có thể ảnh hưởng đến tư thế bảo mật của bạn bằng cách cho phép truy cập ngoài ý muốn. Bạn nên triển khai các biện pháp kiểm soát để giúp ngăn chặn việc thao túng thẻ trái phép. Ví dụ: SCP sau hạn chế việc sử dụng thẻ **`partner-access-exception`** chỉ đối với vai trò quản trị viên (**admin role**), để người dùng không được ủy quyền không thể thay đổi kiểm soát bằng cách đính kèm, gỡ bỏ hoặc sửa đổi thẻ này.
 
-![SCP hạn chế việc quản lý thẻ partner-access-exception](/images/3-BlogsTranslated/Blog2/image11.png)
+![](/images/3-BlogsTranslated/Blog2/image10.png)
 
 Bạn cũng nên đảm bảo rằng thẻ **`partner-access-exception`** không thể được truyền dưới [dạng thẻ phiên](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_session-tags.html) **(session tag)** khi các danh tính đảm nhận vai trò. Hãy xem mẫu [**RCP**](https://github.com/aws-samples/data-perimeter-policy-examples/blob/main/resource_control_policies/data_perimeter_governance_rcp.json) trong kho lưu trữ ví dụ về chính sách vùng biên dữ liệu.
 
-![Cấu trúc tổ chức](/images/3-BlogsTranslated/Blog2/image5.png)
+![](/images/3-BlogsTranslated/Blog2/image11.png)
 
 ### Thiết kế để đạt được sự Xuất sắc trong việc Vận hành 
 
