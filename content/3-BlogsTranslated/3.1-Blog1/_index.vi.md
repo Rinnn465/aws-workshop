@@ -6,13 +6,11 @@ chapter: false
 pre: " <b> 3.1. </b> "
 ---
 
-# **Các Biện pháp Tốt nhất về Bảo mật và Bảo vệ Dữ liệu với Veeam trên AWS** 
+# Các Biện pháp Tốt nhất về Bảo mật và Bảo vệ Dữ liệu với Veeam trên AWS
 
 Tác giả: Desmond Lai Xu và Vishwajeeth Venkatesh | Ngày 11 Tháng 3, 2025 | trên [Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/category/artificial-intelligence/amazon-machine-learning/amazon-bedrock/), [Amazon Bedrock Agents](https://aws.amazon.com/blogs/machine-learning/category/artificial-intelligence/amazon-machine-learning/amazon-bedrock/amazon-bedrock-agents/), [Best Practices](https://aws.amazon.com/blogs/machine-learning/category/post-types/best-practices/), [Generative AI](https://aws.amazon.com/blogs/machine-learning/category/artificial-intelligence/generative-ai/), [Technical How-to](https://aws.amazon.com/blogs/machine-learning/category/post-types/technical-how-to/), [Thought Leadership](https://aws.amazon.com/blogs/machine-learning/category/post-types/thought-leadership/) [Permalink](https://aws.amazon.com/blogs/machine-learning/dynamic-text-to-sql-for-enterprise-workloads-with-amazon-bedrock-agents/) | [Comments](https://aws.amazon.com/blogs/apn/data-protection-and-security-best-practices-with-veeam-on-aws/#Comments) [| Share](https://aws.amazon.com/blogs/apn/data-protection-and-security-best-practices-with-veeam-on-aws/)
 
-### ***By Desmond Lai, Sr. Partner Storage Solutions Architect – AWS***
 
-### ***By Vishwajeeth Venkatesh, Sr. Cloud Systems Engineer – Veeam***
 
 ### 
 
@@ -25,7 +23,7 @@ Bảo vệ thông tin nhạy cảm là điều tối quan trọng đối với m
 
 Những mối lo ngại này nhấn mạnh nhu cầu cấp thiết về việc bảo vệ dữ liệu mạnh mẽ và các chiến lược **an ninh mạng bền vững** hiệu quả để giảm thiểu rủi ro và đảm bảo tuân thủ.
 
-![Ransomware Statistics](/images/5-Workshop/3.1-blog1/image1.png)
+![Ransomware Statistics](/images/3-BlogTranslated/Blog1/image1.png)
 
 ## **Tổng quan về các biện pháp tốt nhất để Bảo mật dữ liệu**
 
@@ -44,7 +42,7 @@ Các biện pháp tốt nhất trong việc bảo mật dữ liệu của bạn 
 
 Để đảm bảo dữ liệu của khách hàng được an toàn và bảo vệ trước các rủi ro tiềm ẩn, việc triển khai Veeam trên AWS cần tuân thủ các phương pháp bảo mật tốt nhất đã được thiết lập. Trong các phần tiếp theo, chúng ta sẽ tìm hiểu cách Veeam tích hợp các phương pháp này để giảm thiểu các mối đe dọa bảo mật, đảm bảo tuân thủ các tiêu chuẩn ngành và giảm thiểu rủi ro cho khách hàng.
 
-**1\. Tính bất biến của kho lưu trữ** 
+## **1\. Tính bất biến của kho lưu trữ** 
 
 Lưu trữ dữ liệu ở trạng thái không thể sửa đổi sau khi được tạo. Điều này đảm bảo tính toàn vẹn và độ bền của dữ liệu để đáp ứng các yêu cầu kiểm toán và tuân thủ bằng cách bảo vệ các bản ghi lịch sử và giao dịch, đảm bảo dữ liệu không thể bị xóa hoặc ghi đè trong một khoảng thời gian lưu giữ cụ thể.
 
@@ -62,7 +60,7 @@ Việc **cô lập** dữ liệu, cơ sở hạ tầng và ứng dụng một c�
 
 Việc này cũng có thể được triển khai ở một [**AWS Region**](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/) **riêng biệt** để tăng cường tính **dự phòng**. Điều này đảm bảo tính khả dụng nếu tài khoản AWS của bạn bị xâm phạm, đồng thời giải quyết mọi vấn đề về tính sẵn sàng ở cấp độ địa lý (geo-level availability).
 
-![Multi-Account Architecture](/images/5-Workshop/3.1-blog1/image2.png)
+![Multi-Account Architecture](/images/3-BlogTranslated/Blog1/image2.png)
 
 ## **3\. Mã hóa Mọi nơi (Encryption Everywhere)**
 
@@ -78,7 +76,7 @@ Hơn nữa, Veeam mở rộng bảo mật này bằng cách hỗ trợ mã hóa 
 
 Veeam tích hợp liền mạch với các [AWS Identity and Access Management (IAM)](https://aws.amazon.com/iam/), đảm bảo rằng chỉ các vai trò được ủy quyền mới có thể truy cập hoặc quản lý các bản sao lưu đã được mã hóa. Bằng cách thực thi mã hóa trên tất cả các điểm dữ liệu, Veeam đơn giản hóa việc quản lý các chính sách mã hóa đồng thời củng cố tính bảo mật tổng thể của dữ liệu sao lưu.
 
-![Encryption Architecture](/images/5-Workshop/3.1-blog1/image3.png)
+![Encryption Architecture](/images/3-BlogTranslated/Blog1/image3.png)
 
 ## **4\. Quản lý Danh tính và Truy cập (Identity and Access Management \- IAM)**
 
@@ -102,7 +100,7 @@ Các kết nối chuyên dụng hoặc VPN cung cấp **băng thông có thể d
 
 Ngoài ra, Veeam có thể kích hoạt chức năng triển khai mạng riêng tư, cho phép giao tiếp với **Amazon S3** thông qua [**các điểm cuối giao diện Amazon S3 riêng tư**](https://docs.aws.amazon.com/AmazonS3/latest/userguide/privatelink-interface-endpoints.html). Veeam cho phép bạn triển khai các **[worker trong môi trường riêng tư](https://helpcenter.veeam.com/docs/vbaws/guide/worker_instances_in_private.html?ver=80)** mà không cần gán **IPV4 công cộng**, đảm bảo luồng lưu lượng sao lưu được bảo mật.
 
-![Private Connectivity Architecture](/images/5-Workshop/3.1-blog1/image4.png)
+![Private Connectivity Architecture](/images/3-BlogTranslated/Blog1/image4.png)
 
 Nếu bạn đang tìm cách triển khai **Veeam Backup for AWS** trong môi trường riêng tư và cần hướng dẫn, Veeam cung cấp một **kịch bản tự động hóa** để giúp bạn bắt đầu.
 
