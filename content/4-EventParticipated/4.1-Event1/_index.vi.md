@@ -7,7 +7,7 @@ pre: " <b> 4.1. </b> "
 ---
 
 
-# Tổng kết từ sự kiện: "AWS Cloud Mastery Series #1 - AI/ML/GenAI trên AWS"
+# Tổng kết từ sự kiện: "AWS Cloud Mastery Series #1 - AI/ML/GenAI on AWS"
 
 ### Định hướng chương trình
 
