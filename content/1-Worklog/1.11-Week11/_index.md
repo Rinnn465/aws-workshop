@@ -1,57 +1,71 @@
 ---
 title: "Week 11 Worklog"
-date: "2025-11-25"
+date: "2025-11-17"
 weight: 11
 chapter: false
 pre: " <b> 1.11. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
+
 
 
 ### Week 11 Objectives:
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Implement core components and pages for Admin Dashboard.
+* Build basic UI components using React and Tailwind CSS.
+* Set up application structure with routing and API services.
+* Configure backend stack and improve security for admin dashboard.
+* Design new database schema and prepare sample data.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Day | Task                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
+| --- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------- | ----------------------------------------- |
+| 2   | - Implement core UI components: Button, Card, StatCard, Header, Modal, Sidebar <br> - Style application using Tailwind CSS and custom styles <br> - Set up main application structure with routing | 11/17/2025   | 11/17/2025      |  |
+| 3   | - Add Analytics, Conversations, Crawler, and Overview pages <br> - Implement services for API interactions <br> - Define TypeScript types to ensure type safety <br> - Configure Vite for development and build | 11/18/2025   | 11/18/2025      |  |
+| 4   | - Remove unnecessary files and duplicate code in admin_stack <br> - Refactor configuration handling and improve security policies <br> - Add AdminBackendStack to manage backend resources and API | 11/19/2025   | 11/19/2025      |  |
+| 5   | - Update Content Security Policy (CSP) to allow Cognito connection <br> - Add deployment scripts and watch-sync functionality for S3 <br> - Test database connection with CRUD operations | 11/20/2025   | 11/20/2025      |  |
+| 6   | - Improve OAuth callback handling and CSP settings <br> - Enhance error handling for Cognito OAuth callback <br> - Adjust Cognito callback URLs and logout URLs <br> - Design new database schema and prepare sample data <br> - Update Appointments, Consultants, Programs management pages with CRUD functionality   | 11/21/2025   | 11/21/2025      |  |
 
 
 ### Week 11 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Completed implementation of basic UI components:
+  * Button with loading state and icon support
+  * Card and StatCard for displaying metrics
+  * Header component for page titles and actions
+  * Reusable Modal component
+  * Sidebar with navigation menu and user profile
 
-* Successfully created and configured an AWS Free Tier account.
+* Successfully built admin dashboard application structure:
+  * Set up routing for different pages
+  * Created pages: Overview, Analytics, Conversations, Crawler
+  * Styling with Tailwind CSS
+  * Configured Vite build tool
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Implemented API services layer:
+  * AnalyticsService for data analysis
+  * ConversationService for conversation management
+  * CrawlerService for crawler operations
+  * Type safety with TypeScript interfaces
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* Improved infrastructure and security:
+  * Refactored admin_stack, removed duplicate code
+  * Added AdminBackendStack for backend resources
+  * Updated Content Security Policy
+  * Integrated Amazon Cognito authentication
 
-* Used AWS CLI to perform basic operations such as:
+* Completed OAuth integration:
+  * Improved OAuth callback handling
+  * Enhanced error handling
+  * Configured callback and logout URLs
+  * Tested and verified authentication flow
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+* Database and data management:
+  * Designed new database schema
+  * Prepared sample data
+  * Tested CRUD operations
+  * Implemented management pages: Appointments, Consultants, Programs with full CRUD functionality
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Deployment and automation:
+  * Added deployment scripts
+  * Set up watch-sync for S3
+  * Optimized development workflow
