@@ -28,54 +28,54 @@ pre: " <b> 1.12 </b> "
 
 ### Kết quả đạt được tuần 12:
 
-* Hoàn thành triển khai theme switching:
+* Hoàn thành triển khai chuyển đổi giao diện:
   * Chế độ sáng/tối (light/dark mode)
-  * Refactor tất cả trang để sử dụng theme styles
-  * Consultants, Conversations, Overview, Programs pages
-  * Cải thiện loading indicators và responsive design
+  * Tái cấu trúc tất cả trang để sử dụng theme styles
+  * Các trang: Tư vấn viên, Hội thoại, Tổng quan, Chương trình
+  * Cải thiện loading indicators và thiết kế responsive
 
 * Tái cấu trúc cấu hình AWS:
   * Chuyển từ .env sang config.json
   * Tự động tạo config bởi CDK FrontendStack
-  * Loại bỏ environment variables
+  * Loại bỏ biến môi trường (environment variables)
   * Xóa deploy.sh script cũ
-  * Load config từ /config.json endpoint
+  * Tải config từ /config.json endpoint
 
-* Database schema optimization:
+* Tối ưu hóa database schema:
   * Xóa bảng CommunityProgram không sử dụng
-  * Remove ProgramsPage component
-  * Clean up API calls và admin service functions
-  * Update OverviewPage và Sidebar
-  * Remove CommunityProgram interface
+  * Xóa ProgramsPage component
+  * Dọn dẹp API calls và admin service functions
+  * Cập nhật OverviewPage và Sidebar
+  * Xóa CommunityProgram interface
 
-* UI/UX improvements:
+* Cải thiện UI/UX:
   * Thay thế icons bằng lucide-react
-  * Thêm dependencies: lucide-react và recharts
-  * Enhanced OverviewPage với charts và stat cards
-  * Modern và consistent design
-  * Improved accessibility và usability
-  * Better confirmation dialogs với globalThis.confirm
+  * Thêm thư viện: lucide-react và recharts
+  * Nâng cấp OverviewPage với biểu đồ và thẻ thống kê
+  * Thiết kế hiện đại và nhất quán
+  * Cải thiện khả năng tiếp cận và tính dễ sử dụng
+  * Hộp thoại xác nhận tốt hơn với globalThis.confirm
 
-* Infrastructure optimization:
-  * Refactor archive service
-  * Remove unused CSV mappings
-  * Implement custom resource cho config.json
-  * Auto-generate config từ SSM parameters
+* Tối ưu hóa infrastructure:
+  * Tái cấu trúc archive service
+  * Xóa các CSV mappings không sử dụng
+  * Triển khai custom resource cho config.json
+  * Tự động tạo config từ SSM parameters
   * Upload config lên S3
 
-* Consultant schedule management:
-  * Triển khai đầy đủ CRUD operations cho consultant schedules
-  * Generate tự động lịch trình
-  * Filter appointments theo consultant và customer
-  * ConsultantSchedule type cho type safety
-  * Enhanced error handling và logging
-  * Integration với Admin service
+* Quản lý lịch trình tư vấn viên:
+  * Triển khai đầy đủ các thao tác CRUD cho lịch trình tư vấn viên
+  * Tự động tạo lịch trình
+  * Lọc lịch hẹn theo tư vấn viên và khách hàng
+  * ConsultantSchedule type đảm bảo type safety
+  * Tăng cường xử lý lỗi và ghi log
+  * Tích hợp với Admin service
 
-* Code quality improvements:
-  * Better type safety với TypeScript
-  * Improved error handling
-  * Enhanced logging mechanisms
-  * Code cleanup và organization
-  * Consistent coding patterns
+* Cải thiện chất lượng code:
+  * Type safety tốt hơn với TypeScript
+  * Xử lý lỗi được cải thiện
+  * Cơ chế logging nâng cao
+  * Dọn dẹp và tổ chức code
+  * Mẫu code nhất quán
 
 
