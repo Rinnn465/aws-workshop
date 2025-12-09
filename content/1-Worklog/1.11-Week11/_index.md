@@ -19,11 +19,11 @@ pre: " <b> 1.11. </b> "
 ### Tasks to be carried out this week:
 | Day | Task                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
 | --- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Implement core UI components: Button, Card, StatCard, Header, Modal, Sidebar <br> - Style application using Tailwind CSS and custom styles <br> - Set up main application structure with routing | 11/17/2025   | 11/17/2025      |  |
-| 3   | - Add Analytics, Conversations, Crawler, and Overview pages <br> - Implement services for API interactions <br> - Define TypeScript types to ensure type safety <br> - Configure Vite for development and build | 11/18/2025   | 11/18/2025      |  |
-| 4   | - Remove unnecessary files and duplicate code in admin_stack <br> - Refactor configuration handling and improve security policies <br> - Add AdminBackendStack to manage backend resources and API | 11/19/2025   | 11/19/2025      |  |
-| 5   | - Update Content Security Policy (CSP) to allow Cognito connection <br> - Add deployment scripts and watch-sync functionality for S3 <br> - Test database connection with CRUD operations | 11/20/2025   | 11/20/2025      |  |
-| 6   | - Improve OAuth callback handling and CSP settings <br> - Enhance error handling for Cognito OAuth callback <br> - Adjust Cognito callback URLs and logout URLs <br> - Design new database schema and prepare sample data <br> - Update Appointments, Consultants, Programs management pages with CRUD functionality   | 11/21/2025   | 11/21/2025      |  |
+| 2   | - Implement core UI components: Button, Card, StatCard, Header, Modal, Sidebar <br> - Style application using Tailwind CSS and custom styles <br> - Set up main application structure with routing | 17/11/2025   | 17/11/2025      |  |
+| 3   | - Add Analytics, Conversations, Crawler, and Overview pages <br> - Implement services for API interactions <br> - Define TypeScript types to ensure type safety <br> - Configure Vite for development and build | 18/11/2025   | 18/11/2025      |  |
+| 4   | - Remove unnecessary files and duplicate code in admin_stack <br> - Refactor configuration handling and improve security policies <br> - Add AdminBackendStack to manage backend resources and API | 19/11/2025   | 19/11/2025      |  |
+| 5   | - Update Content Security Policy (CSP) to allow Cognito connection <br> - Add deployment scripts and watch-sync functionality for S3 <br> - Test database connection with CRUD operations | 20/11/2025   | 20/11/2025      |  |
+| 6   | - Improve OAuth callback handling and CSP settings <br> - Enhance error handling for Cognito OAuth callback <br> - Adjust Cognito callback URLs and logout URLs <br> - Design new database schema and prepare sample data <br> - Update Appointments, Consultants, Programs management pages with CRUD functionality   | 21/11/2025   | 21/11/2025      |  |
 
 
 ### Week 11 Achievements:
