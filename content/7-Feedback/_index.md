@@ -121,13 +121,3 @@ What I appreciate most about the program:
 Thank you to the FCJ team, mentors, and fellow interns for an incredible learning experience. The knowledge and skills gained during these 12 weeks will serve as a strong foundation for my future career in cloud computing and software engineering.
 
 ---
-
-**Rating Summary:**
-- Working Environment: ⭐⭐⭐⭐⭐ (5/5)
-- Mentor Support: ⭐⭐⭐⭐⭐ (5/5)
-- Curriculum Relevance: ⭐⭐⭐⭐⭐ (5/5)
-- Learning Opportunities: ⭐⭐⭐⭐⭐ (5/5)
-- Team Culture: ⭐⭐⭐⭐⭐ (5/5)
-- Program Structure: ⭐⭐⭐⭐☆ (4.5/5)
-
-**Overall Program Rating: 5/5** ⭐⭐⭐⭐⭐

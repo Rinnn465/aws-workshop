@@ -125,13 +125,3 @@ Chương trình First Cloud Journey vượt quá mong đợi của tôi về m�
 Cảm ơn team FCJ, các mentor và các thực tập sinh đồng nghiệp đã có trải nghiệm học tập tuyệt vời. Kiến thức và kỹ năng đạt được trong 12 tuần này sẽ là nền tảng vững chắc cho sự nghiệp tương lai trong cloud computing và kỹ thuật phần mềm.
 
 ---
-
-**Tóm tắt đánh giá:**
-- Môi trường làm việc: ⭐⭐⭐⭐⭐ (5/5)
-- Hỗ trợ Mentor: ⭐⭐⭐⭐⭐ (5/5)
-- Sự phù hợp chương trình: ⭐⭐⭐⭐⭐ (5/5)
-- Cơ hội học tập: ⭐⭐⭐⭐⭐ (5/5)
-- Văn hóa nhóm: ⭐⭐⭐⭐⭐ (5/5)
-- Cấu trúc chương trình: ⭐⭐⭐⭐☆ (4.5/5)
-
-**Đánh giá chung chương trình: 5/5** ⭐⭐⭐⭐⭐
