@@ -28,6 +28,9 @@ pre: " <b> 1. </b> "
 
 **Week 10:** [Deploy Admin Dashboard on S3 & CloudFront, Research Amazon Cognito](1.10-week10/)
 
-**Week 11:** [Doing task M...](1.11-week11/)
+**Week 11:** [Built Admin Dashboard Foundation with Core UI Components, Integrated Cognito/OAuth, and Implemented Initial CRUD Management Pages.](1.11-week11/)
 
-**Week 12:** [Doing task N...](1.12-week12/)
+**Week 12:** [Completed Theme Switching, Optimized AWS/Database Architecture, and Enhanced UI/UX with Charting and Scheduling.](1.12-week12/)
+
+**Week 13:** [Launched Full Consultant Portal with Cognito Authentication, Integrated SES Email Notifications, and Implemented Vietnamese Localization.](1.13-week13/)
+

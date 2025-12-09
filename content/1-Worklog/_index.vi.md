@@ -28,6 +28,8 @@ pre: " <b> 1. </b> "
 
 **Tuần 10:** [Triển khai Admin Dashboard trên S3 & CloudFront, nghiên cứu Amazon Cognito](1.10-week10/)
 
-**Tuần 11:** [Làm công việc M...](1.11-week11/)
+**Tuần 11:** [Xây dựng Nền tảng Admin Dashboard với UI Components, Tích hợp Cognito/OAuth và Triển khai các Trang Quản lý CRUD.](1.11-week11/)
 
-**Tuần 12:** [Làm công việc N...](1.12-week12/)
+**Tuần 12:** [Hoàn thành Triển khai Theme, Tối ưu hóa Kiến trúc AWS/Database, và Cải thiện UI/UX toàn diện.](1.12-week12/)
+
+**Tuần 13:** [Hoàn thành Triển khai Consultant Portal, Tích hợp Thông báo Email SES, Đa ngôn ngữ (Tiếng Việt) và Tái cấu trúc Code/Hạ tầng.](1.13-week13/)

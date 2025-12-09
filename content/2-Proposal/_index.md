@@ -1,6 +1,6 @@
 ---
 title: "Proposal"
-date: "2025-12-03"
+date: "2025-09-09"
 weight: 2
 chapter: false
 pre: " <b> 2. </b> "
@@ -8,10 +8,20 @@ pre: " <b> 2. </b> "
 
 # Intelligent Scheduling Chatbot on AWS
 
-**Date:** December 3, 2025  
+**Date:** December 03, 2025  
 **Team:** Vinhomies – FPT University
 
 ---
+
+## Table of Contents
+
+1. [Background and Motivation](#1-background-and-motivation)
+2. [Solution Architecture](#2-solution-architecture)
+3. [Activities and Deliverables](#3-activities-and-deliverables)
+4. [Expected AWS Cost Breakdown](#4-expected-aws-cost-breakdown)
+5. [Team](#5-team)
+6. [Resources & Cost Estimates](#6-resources--cost-estimates)
+7. [Acceptance](#7-acceptance)
 
 ## 1. BACKGROUND AND MOTIVATION
 
@@ -335,47 +345,32 @@ Cost Contribution distribution between Partner, Customer, AWS:
 
 ## 7. ACCEPTANCE
 
-### 7.1	ACCEPTANCE PROCESS 
-To conclude a project phase or final delivery, the following acceptance process will apply:
-1.	Submission: Upon completion of a Phase, the Partner will submit the associated tangible Deliverables to the Customer Executive Sponsor, accompanied by a formal Acceptance Form.
-2.	Review Period: Upon submission, the Customer will have eight (8) business days (the “Acceptance Period”) to review, evaluate, and test the Deliverables to determine if they satisfy the acceptance criteria.
-3.	Approval: If the Deliverables satisfy the acceptance criteria in all material respects, the Customer will furnish a written acceptance confirmation via the Acceptance Form prior to the end of the Acceptance Period.
-4.	Rejection & Correction:
-    * If a Deliverable is not accepted due to non-conformity or defect, the Customer must provide a written Rejection Notice detailed the specific errors.
-    *	The Partner will promptly correct (remediate) any defects to meet the requirements and resubmit the modified Deliverable within the subsequent Sprint cycle (or an agreed timeline).
-5.	Deemed Acceptance: If the Customer fails to provide a Rejection Notice or signed Acceptance Form prior to the end of the applicable Acceptance Period, the corresponding Deliverables are deemed automatically accepted.
+### 7.1	EVALUATION PROCESS
+As this is a Proof of Concept (POC) project within the framework of the training program, the acceptance process will focus on demonstrating the feasibility of the solution:
+1.  **Deployment & Internal Testing:** The project team performs self-testing to ensure core workflows function correctly in the AWS environment.
+2.  **Official Demo:** The team performs a live demonstration of the committed use-cases to the Mentor/Instructors.
+3.  **Feedback:** Receive feedback from the Mentor regarding functionality and architecture.
+4.  **Finalization:** Fix critical bugs (if any) that affect the core flow and submit the final report.
 
+### 7.2	ACCEPTANCE CRITERIA
+The project is considered complete when it meets the following basic functional criteria (minor UI bugs or unhandled edge cases are acceptable):
 
-### 7.2	SPECIFIC ACCEPTANCE CRITERIA 
-The project will be considered successfully delivered when the following technical and operational criteria are met:
+**1. AWS Infrastructure:**
+*   The system is successfully deployed on AWS (not running locally).
+*   Key services (Lambda, RDS, Bedrock) are successfully connected.
 
-**Documentation & Design**:
+**2. Chatbot Functionality (Core Flow):**
+*   **Happy Path:** The chatbot can successfully execute an end-to-end booking process (Inquire → Check Availability → Book → Save to DB) under normal network conditions.
+*   **Response:** The chatbot provides relevant answers (within the capabilities of the current AI model).
 
-*	Technical Architecture Document (High-level & Low-level designs) is finalized and approved by the Solution Architect.
-*	Infrastructure design (VPC, Security Groups) complies with AWS Well-Architected Framework.
+**3. Admin Dashboard / Consultant Portal:**
+*   Accessible via the CloudFront/S3 URL.
+*   Successful login with an Admin account and Consultant account.
+*   Displays appointment data from the database (minor latency is acceptable).
 
-**Infrastructure & Security**:
-*	All AWS resources (VPC, Lambda, API Gateway, RDS, DynamoDB, Cognito) are successfully deployed via AWS CDK.
-*	Network security is verified: Private Subnets isolated, VPC Endpoints active, and Database access restricted.
-*	Logging and Monitoring (CloudWatch Logs & Metrics) are configured and capturing active data.
+**4. Documentation:**
+*   Full Source Code provided on GitHub.
+*   Setup guide (Readme) and project architecture report.
 
-**Chatbot Functionality**:
-*	End-to-End Flow: Successfully processes a complete booking flow (Intent → Check Availability → Book → Confirm) on Facebook Messenger.
-*	AI Performance:
-	*	Intent detection works stably for core intents (Booking vs. Q&A).
-	*	Text-to-SQL accuracy is ≥ 80% on the defined test dataset.
-*	Data Integrity: Booking data is correctly persisted in Amazon RDS PostgreSQL and synchronized with DynamoDB session state.
-
-**Admin Dashboard**:
-*	Authentication works correctly via Amazon Cognito (Login/Logout).
-*	Core features are functional: View Appointment List, Dashboard Statistics, Consultant Management.
-*	UI/UX is responsive and free of critical blocking bugs.
-
-**Consultant Portal**:
-*	Authentication: Secure Login/Logout via Amazon Cognito for authorized consultants.
-*	Core Workflows: Consultants can view schedules and manage appointments (Confirm, Cancel, Complete).
-*	System Integration: Actions correctly trigger status updates in Database and send email notifications to customers.
-**Go-Live Readiness**:
-*	User Acceptance Testing (UAT) completed for all critical business flows.
-*	User Manuals / Operational Guides are handed over.
-*	Final Project Demo presentation is conducted for stakeholders.
+---
+Download full proposal document: [MeetAssist Intelligent Scheduling Chatbot](/images/2-Proposal/Proposal_Template.docx)
